@@ -1,0 +1,24 @@
+# API Keys for Resume Tailor
+# Get your API keys from the respective providers
+
+# OpenRouter API Key (Primary)
+# Get from: https://openrouter.ai/keys
+OPENROUTER_API_KEY=your_openrouter_key_here
+
+# Cerebras API Key (Secondary)
+# Get from: https://cerebras.ai/
+# Note: Requires cerebras-cloud-sdk package (installed automatically)
+CEREBRAS_API_KEY=your_cerebras_key_here
+
+# Gemini API Key (Tertiary)
+# Get from: https://aistudio.google.com/
+GEMINI_API_KEY=your_gemini_key_here
+
+# Note: The application works without API keys but with limited functionality
+# The system will automatically fallback between providers if one fails
+
+# Flask Configuration
+SECRET_KEY=your_secret_key_here
+
+# Optional: Flask Environment
+FLASK_ENV=development 

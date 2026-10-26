@@ -1,0 +1,17 @@
+[Unit]
+Description=Resume Tailor Application
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/resume-tailor
+Environment=FLASK_ENV=production
+Environment=FLASK_APP=app.py
+Environment=PYTHONPATH=/opt/resume-tailor
+ExecStart=/usr/bin/python3 /opt/resume-tailor/app.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target 

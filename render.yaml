@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: resume-tailor
+    env: python
+    buildCommand: |
+      apt-get update && apt-get install -y texlive-full
+      pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: TEMP_DIR
+        value: /opt/render/project/src/temp 

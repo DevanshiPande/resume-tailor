@@ -1,0 +1,20 @@
+# Web Framework
+Flask==2.3.3
+
+# Environment and Configuration
+python-dotenv==1.0.0
+
+# HTTP Clients
+requests==2.31.0
+httpx==0.24.1
+
+# PDF Processing
+PyPDF2==3.0.1
+reportlab==4.0.4
+
+# AI Providers
+cerebras-cloud-sdk==1.35.0
+
+# Development and Testing
+pytest==7.4.0
+pytest-cov==4.1.0 
